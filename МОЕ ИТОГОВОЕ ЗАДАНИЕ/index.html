@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoBeauty</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo"><a href="index.html">AutoBeauty</a></div>
+    <ul class="nav-menu">
+        <li><a href="index.html" class="active">Главная</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="blog.html">Блог</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+    <div class="cart-icon">
+        🛒 <span class="cart-count">0</span>
+    </div>
+    <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+     
+        <section class="hero">
+            <h1>Магазин автохимии и аксессуаров</h1>
+            <p>Профессиональный уход за автомобилем. Шампуни, полироли, чехлы, коврики.</p>
+            <a href="catalog.html" class="btn">Перейти в каталог</a>
+        </section>
+
+        <section>
+            <h2>Почему выбирают нас</h2>
+            <div class="advantages">
+                <div class="advantage-item"> Только оригинальная продукция</div>
+                <div class="advantage-item"> Быстрая доставка по всей России</div>
+                <div class="advantage-item"> Бесплатная консультация эксперта</div>
+            </div>
+        </section>
+
+        <section class="video-section">
+            <h2>Видео-инструкции</h2>
+            <div class="video-grid">
+           
+        <div class="video-card">
+            <div class="video-wrapper">
+                <iframe 
+                    class="video-iframe"
+                    src="https://rutube.ru/play/embed/07b5b0791f43f115874af180b16751a4/" 
+                    frameborder="0"
+                    allow="clipboard-write; autoplay" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <h3>Полировка кузова</h3>
+            <p>Восстанавливаем блеск своими руками</p>
+        </div>
+       
+        <div class="video-card">
+            <div class="video-wrapper">
+                <iframe 
+                    class="video-iframe"
+                    src="https://rutube.ru/play/embed/a8620610a1be1b0cfba38b7c5c17f058/" 
+                    frameborder="0"
+                    allow="clipboard-write; autoplay" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <h3>Чистка салона</h3>
+            <p>Удаляем пятна с ткани и кожи</p>
+        </div>
+
+        <div class="video-card">
+            <div class="video-wrapper">
+                <iframe 
+                    class="video-iframe"
+                    src="https://rutube.ru/play/embed/9b477c5a2db91d2dbb211b8768bdd204/" 
+                    frameborder="0"
+                    allow="clipboard-write; autoplay" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <h3>Бесконтактная мойка</h3>
+            <p>Правильно наносим и смываем пену</p>
+        </div>
+
+        </div>
+        </section>
+
+        <section>
+            <h2>Популярные товары</h2>
+            <div class="card-grid" id="popular-products">
+            </div>
+            <div class="text-center">
+                <a href="catalog.html" class="btn">Смотреть больше</a>
+            </div>
+        </section>
+
+        <section class="body-selector">
+            <h2>Подберите товар по типу кузова</h2>
+            <div class="body-buttons">
+                <button class="body-btn" data-body="sedan"> Седан</button>
+                <button class="body-btn" data-body="hatchback"> Хэтчбек</button>
+                <button class="body-btn" data-body="suv"> Внедорожник</button>
+            </div>
+            <div id="body-result" class="body-result">
+                 Выберите тип кузова
+            </div>
+        </section>
+
+        <section class="promo">
+            <div class="promo-box">
+                <h2>Подпишись и получи скидку 15%</h2>
+                <input type="email" id="subscribe-email" placeholder="Ваш e-mail">
+                <button id="subscribe-btn">Подписаться</button>
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-links">
+        <a href="index.html">Главная</a> |
+        <a href="catalog.html">Каталог</a> |
+        <a href="blog.html">Блог</a> |
+        <a href="contacts.html">Контакты</a>
+    </div>
+    <p>© <span id="current-year"></span> AutoBeauty. Учебный проект</p>
+    <div class="social-icons">
+        <a href="#"> Instagram</a> | 
+        <a href="#"> VK</a> |
+        <a href="#"> YouTube</a>
+    </div>
+</footer>
+
+<div id="cart-modal" class="cart-modal">
+    <div class="cart-modal-content">
+        <span class="cart-close">&times;</span>
+        <h2>Корзина</h2>
+        <div id="cart-items-list"></div>
+        <div class="cart-total">Итого: <span id="cart-total">0</span> ₽</div>
+        <button id="clear-cart-btn" class="btn">Очистить корзину</button>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoBeauty</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo"><a href="index.html">AutoBeauty</a></div>
+    <ul class="nav-menu">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="blog.html">Блог</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+    <div class="cart-icon">
+        🛒 <span class="cart-count">0</span>
+    </div>
+    <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <article class="article-page" id="article-content">
+        </article>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-links">
+        <a href="index.html">Главная</a> |
+        <a href="catalog.html">Каталог</a> |
+        <a href="blog.html">Блог</a> |
+        <a href="contacts.html">Контакты</a>
+    </div>
+    <p>© <span id="current-year"></span> AutoBeauty. Учебный проект</p>
+    <div class="social-icons">
+        <a href="#">Instagram</a> | 
+        <a href="#">VK</a> |
+        <a href="#">YouTube</a>
+    </div>
+</footer>
+
+<div id="cart-modal" class="cart-modal">
+    <div class="cart-modal-content">
+        <span class="cart-close">&times;</span>
+        <h2>Корзина</h2>
+        <div id="cart-items-list"></div>
+        <div class="cart-total">Итого: <span id="cart-total">0</span> ₽</div>
+        <button id="clear-cart-btn" class="btn">Очистить корзину</button>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
